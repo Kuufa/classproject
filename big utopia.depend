@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1575989583 source:d:\coding\projekty\big utopia\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	<stdlib.h>
+	<cstdlib>
+	<ctime>
+	<windows.h>
+
