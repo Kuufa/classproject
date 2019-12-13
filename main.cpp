@@ -27,7 +27,7 @@ float divide (float x, float y)
     return x / y;
 }
 
-
+//printf ("Wynik: %.1f")
 
 int main()
 {
@@ -58,6 +58,7 @@ int main()
             std::cin >> op;
                 if (op == '1') // dodawanie
                 {
+                     //printf("Wynik: %.1f",add(x, y));
                      std::cout << "Wynik:" << add(x, y) << "\n";
                      std::cout << "Czy chcesz obliczyc cos jeszcze? y/n \n";
                      std::cin >> exit;
@@ -207,7 +208,7 @@ int main()
         }
                 else if (choice == '3') // losowanie liczb
                 {
-                srand( time( NULL ) );
+                srand(clock());
                 std::cout << "Wylosowanie pierwsze: " << std::rand() << "\n";
                 std::cout << "Wylosowanie drugie: " << losowa << "\n";
                 losowa = std::rand();
@@ -225,7 +226,7 @@ int main()
                     goto orka;
                 }
             }
-               else
+               else if (choice != '1' || choice != '2' || choice != '3' || choice != '4' ) // ew else
                 {
                 std::cout << "Co ty robisz \n";
                 std::cout << "Chcesz powrocic y/n \n";
